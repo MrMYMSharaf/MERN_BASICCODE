@@ -1,0 +1,58 @@
+/* Container of the navigation list */
+.home-ul {
+    list-style-type: none;  /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Aligns the list items horizontally */
+    background-color: #333;  /* Dark background color for the navigation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow for depth */
+  }
+  
+  /* Individual list items */
+  .home-11 {
+    flex-grow: 1;  /* Distributes space evenly among list items */
+    text-align: center;  /* Centers text within each list item */
+  }
+  
+  /* Styling for links within the navigation */
+  .home-a {
+    display: block;
+    color: white;  /* White text color for contrast */
+    padding: 14px 20px;  /* Spacing within each link */
+    text-decoration: none;  /* Removes the default underline from links */
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition for hover effects */
+  }
+  
+  /* Change color when hovering over links */
+  .home-a:hover {
+    background-color: #555;  /* Slightly lighter background on hover */
+    transform: scale(1.05);  /* Slightly enlarges the link on hover */
+  }
+  
+  /* Active link styling */
+  .active {
+    background-color: #4CAF50;  /* Green background for the active link */
+  }
+  
+  /* Ensures h1 within the navigation is styled properly */
+  .home-11 h1 {
+    margin: 0;
+    font-size: 1.2em;  /* Adjust font size */
+    font-weight: bold;  /* Makes the text bold */
+    color: inherit;  /* Inherits the color from the link */
+  }
+  
+  /* Responsive design: Stacks items vertically on small screens */
+  @media screen and (max-width: 600px) {
+    .home-ul {
+      flex-direction: column;  /* Stacks list items vertically */
+    }
+    .home-11 {
+      text-align: left;  /* Aligns text to the left for each item */
+      padding: 10px 0;
+    }
+    .home-a {
+      padding: 12px 16px;
+    }
+  }
+  
